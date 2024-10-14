@@ -4,40 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      img {
-        width: 80px;
-        height: 50px;
-      }
-      body {
-        width: 600px;
-        margin: 0 auto;
-      }
-      td {
-        padding-bottom: 20px;
-        border-bottom: 1px solid #e0e0e0;
-      }
-      table {
-        width: 100%;
-      }
-    </style>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <p
-      style="
-        color: #98a2b3;
-        text-align: center;
-        font-weight: 400;
-        font-size: 15px;
-      "
-    >
-      View in browser
-    </p>
-    <header style="text-align: center">
+    <p>View in browser</p>
+    <header>
       <img src="./pictures/logo.png" alt="ACME" />
     </header>
     <h1>Functional Style</h1>
-    <p style="color: #98a2b3">
+    <p id="secondary_text">
       Combine practicality and style effortlessly with our furniture, offering
       <br />
       functional designs that enhance your living space
@@ -46,31 +21,31 @@
     <table>
       <thead>
         <tr>
-          <th style="width: 70%; color: #667085; font-weight: 600">Item</th>
-          <th style="font-weight: 600">Qty</th>
-          <th style="font-weight: 600">Price</th>
+          <th id="table_head" class="indentation">Item</th>
+          <th class="table_text indentation">Qty</th>
+          <th class="table_text indentation">Price</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td style="color: #667085">Elegant Feast</td>
-          <td>2</td>
-          <td>$499.99</td>
+          <td class="indentation">Elegant Feast</td>
+          <td class="table_text indentation">2</td>
+          <td class="table_text indentation">$499.99</td>
         </tr>
         <tr>
-          <td style="color: #667085">Modern Fusion</td>
-          <td>2</td>
-          <td>$699.99</td>
+          <td class="indentation">Modern Fusion</td>
+          <td class="table_text indentation">2</td>
+          <td class="table_text indentation">$699.99</td>
         </tr>
         <tr>
-          <td style="color: #667085">Rustic Charm</td>
-          <td>2</td>
-          <td>$399.99</td>
+          <td class="indentation">Rustic Charm</td>
+          <td class="table_text indentation">2</td>
+          <td class="table_text indentation">$399.99</td>
         </tr>
         <tr>
-          <td style="font-weight: 600; color: #667085">Total</td>
-          <td>6</td>
-          <td style="font-weight: 600">$3194.99</td>
+          <td class="table_footer table_total indentation">Total</td>
+          <td class="table_footer indentation">6</td>
+          <td class="table_footer indentation">$3194.99</td>
         </tr>
       </tbody>
     </table>
@@ -79,27 +54,13 @@
     <table>
       <thead>
         <tr>
-          <th
-            colspan="2"
-            style="padding-bottom: 5px; border-bottom: 0; font-weight: 600"
-          >
-            Acme corporation
-          </th>
+          <th class="footer" colspan="2">Acme corporation</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td
-            style="
-              padding-bottom: 0;
-              border-bottom: 0;
-              width: 50%;
-              color: #667085;
-            "
-          >
-            Think different
-          </td>
-          <td style="padding-bottom: 0; border-bottom: 0; color: #667085">
+          <td class="footer footer_info">Think different</td>
+          <td class="footer_info footer_position">
             123 Main Street Anytown, CA 12345
           </td>
         </tr>
